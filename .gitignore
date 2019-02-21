@@ -26,8 +26,4 @@ hs_err_pid*
 *.pem
 
 # vagrant files
-<<<<<<< HEAD
 .vagrant
-=======
-.vagrant
->>>>>>> a95c6c2d1db60c2cde9b97f8f9340f3d68e6858f
