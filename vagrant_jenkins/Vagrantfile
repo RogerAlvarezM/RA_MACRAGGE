@@ -20,9 +20,7 @@ Vagrant.configure('2') do |config|
   end
 
   config.vm.define 'linux-server-1' do |s|
-    s.vm.provision 'docker'
-    s.vm.provision 'docker_compose', compose_version:'1.23.2'
-    s.vm.provision "shell", inline: "apt-get install openjdk-11-jdk -y"
+    s.vm.provision "shell", path: "./install_jenkins.sh"
     s.vm.provider :openstack do |os, override|
       os.server_name = 'RALVAREZM-DH03'
       os.flavor = ENV['OS_FLAVOR']
