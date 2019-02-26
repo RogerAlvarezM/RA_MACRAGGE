@@ -27,3 +27,9 @@ hs_err_pid*
 
 # vagrant files
 .vagrant
+
+# gradle files
+.gradle
+.settings
+bin
+gradle-5.2.1
