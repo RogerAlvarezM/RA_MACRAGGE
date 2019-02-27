@@ -18,6 +18,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
+                sh './gradle-jenkins-at08/gradlew jar -p gradle-jenkins-at08'                
             }
         }
     }
