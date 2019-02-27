@@ -25,10 +25,8 @@ pipeline {
 
     post {
         always {
-            archiveArtifacts artifacts: 'build/libs/**/*.jar', fingerprint: true
-            junit 'build/test-results/**/*.xml'
+            archiveArtifacts artifacts: 'gradle-jenkins-at08/build/libs/**/*.jar', fingerprint: true
+            junit 'gradle-jenkins-at08/build/test-results/**/*.xml'
         }
     }
 }
-
-
