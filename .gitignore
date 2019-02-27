@@ -10,8 +10,9 @@
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
-# Package Files #
+# Package Files 
 *.jar
+!gradle-jenkins-at08/**/gradle-wrapper.jar
 *.war
 *.nar
 *.ear
@@ -30,4 +31,9 @@ hs_err_pid*
 
 # gradle files
 .gradle
+.settings
+.classpath
+.project
+build
+bin
 gradle-5.2.1
