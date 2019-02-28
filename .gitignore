@@ -30,4 +30,9 @@ hs_err_pid*
 
 # gradle files
 .gradle
+.settings
+.classpath
+.project
+build
+bin
 gradle-5.2.1
